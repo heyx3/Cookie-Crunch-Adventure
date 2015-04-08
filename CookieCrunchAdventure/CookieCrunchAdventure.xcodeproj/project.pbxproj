@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		104BEC991AD567910035A7EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BEC981AD567910035A7EA /* AppDelegate.swift */; };
+		104BEC9B1AD567910035A7EA /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 104BEC9A1AD567910035A7EA /* GameScene.sks */; };
+		104BEC9D1AD567910035A7EA /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BEC9C1AD567910035A7EA /* GameScene.swift */; };
+		104BEC9F1AD567910035A7EA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BEC9E1AD567910035A7EA /* GameViewController.swift */; };
+		104BECA21AD567910035A7EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104BECA01AD567910035A7EA /* Main.storyboard */; };
+		104BECA41AD567910035A7EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 104BECA31AD567910035A7EA /* Images.xcassets */; };
+		104BECA71AD567910035A7EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 104BECA51AD567910035A7EA /* LaunchScreen.xib */; };
+		104BECB31AD567910035A7EA /* CookieCrunchAdventureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECB21AD567910035A7EA /* CookieCrunchAdventureTests.swift */; };
+		104BECBD1AD567FF0035A7EA /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 104BECBC1AD567FF0035A7EA /* Sprites.atlas */; };
+		104BECC51AD568780035A7EA /* Chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = 104BECBF1AD568780035A7EA /* Chomp.wav */; };
+		104BECC61AD568780035A7EA /* Drip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 104BECC01AD568780035A7EA /* Drip.wav */; };
+		104BECC71AD568780035A7EA /* Error.wav in Resources */ = {isa = PBXBuildFile; fileRef = 104BECC11AD568780035A7EA /* Error.wav */; };
+		104BECC81AD568780035A7EA /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = 104BECC21AD568780035A7EA /* Ka-Ching.wav */; };
+		104BECC91AD568780035A7EA /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 104BECC31AD568780035A7EA /* Mining by Moonlight.mp3 */; };
+		104BECCA1AD568780035A7EA /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = 104BECC41AD568780035A7EA /* Scrape.wav */; };
+		104BECCC1AD56AF60035A7EA /* Grid.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 104BECCB1AD56AF60035A7EA /* Grid.atlas */; };
+		104BECD31AD56B100035A7EA /* Level_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 104BECCE1AD56B100035A7EA /* Level_0.json */; };
+		104BECD41AD56B100035A7EA /* Level_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 104BECCF1AD56B100035A7EA /* Level_1.json */; };
+		104BECD51AD56B100035A7EA /* Level_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 104BECD01AD56B100035A7EA /* Level_2.json */; };
+		104BECD61AD56B100035A7EA /* Level_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 104BECD11AD56B100035A7EA /* Level_3.json */; };
+		104BECD71AD56B100035A7EA /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 104BECD21AD56B100035A7EA /* Level_4.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		104BECAD1AD567910035A7EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 104BEC8B1AD567910035A7EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 104BEC921AD567910035A7EA;
+			remoteInfo = CookieCrunchAdventure;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		104BEC931AD567910035A7EA /* CookieCrunchAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieCrunchAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		104BEC971AD567910035A7EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		104BEC981AD567910035A7EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		104BEC9A1AD567910035A7EA /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		104BEC9C1AD567910035A7EA /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		104BEC9E1AD567910035A7EA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		104BECA11AD567910035A7EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		104BECA31AD567910035A7EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		104BECA61AD567910035A7EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		104BECAC1AD567910035A7EA /* CookieCrunchAdventureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookieCrunchAdventureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		104BECB11AD567910035A7EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		104BECB21AD567910035A7EA /* CookieCrunchAdventureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieCrunchAdventureTests.swift; sourceTree = "<group>"; };
+		104BECBC1AD567FF0035A7EA /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		104BECBF1AD568780035A7EA /* Chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Chomp.wav; sourceTree = "<group>"; };
+		104BECC01AD568780035A7EA /* Drip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Drip.wav; sourceTree = "<group>"; };
+		104BECC11AD568780035A7EA /* Error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Error.wav; sourceTree = "<group>"; };
+		104BECC21AD568780035A7EA /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
+		104BECC31AD568780035A7EA /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
+		104BECC41AD568780035A7EA /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
+		104BECCB1AD56AF60035A7EA /* Grid.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Grid.atlas; sourceTree = "<group>"; };
+		104BECCE1AD56B100035A7EA /* Level_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_0.json; sourceTree = "<group>"; };
+		104BECCF1AD56B100035A7EA /* Level_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_1.json; sourceTree = "<group>"; };
+		104BECD01AD56B100035A7EA /* Level_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_2.json; sourceTree = "<group>"; };
+		104BECD11AD56B100035A7EA /* Level_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_3.json; sourceTree = "<group>"; };
+		104BECD21AD56B100035A7EA /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		104BEC901AD567910035A7EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104BECA91AD567910035A7EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		104BEC8A1AD567910035A7EA = {
+			isa = PBXGroup;
+			children = (
+				104BEC951AD567910035A7EA /* CookieCrunchAdventure */,
+				104BECAF1AD567910035A7EA /* CookieCrunchAdventureTests */,
+				104BEC941AD567910035A7EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		104BEC941AD567910035A7EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				104BEC931AD567910035A7EA /* CookieCrunchAdventure.app */,
+				104BECAC1AD567910035A7EA /* CookieCrunchAdventureTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		104BEC951AD567910035A7EA /* CookieCrunchAdventure */ = {
+			isa = PBXGroup;
+			children = (
+				104BECCD1AD56B100035A7EA /* Levels */,
+				104BECCB1AD56AF60035A7EA /* Grid.atlas */,
+				104BECBE1AD568780035A7EA /* Sounds */,
+				104BECBC1AD567FF0035A7EA /* Sprites.atlas */,
+				104BEC981AD567910035A7EA /* AppDelegate.swift */,
+				104BEC9A1AD567910035A7EA /* GameScene.sks */,
+				104BEC9C1AD567910035A7EA /* GameScene.swift */,
+				104BEC9E1AD567910035A7EA /* GameViewController.swift */,
+				104BECA01AD567910035A7EA /* Main.storyboard */,
+				104BECA31AD567910035A7EA /* Images.xcassets */,
+				104BECA51AD567910035A7EA /* LaunchScreen.xib */,
+				104BEC961AD567910035A7EA /* Supporting Files */,
+			);
+			path = CookieCrunchAdventure;
+			sourceTree = "<group>";
+		};
+		104BEC961AD567910035A7EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				104BEC971AD567910035A7EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		104BECAF1AD567910035A7EA /* CookieCrunchAdventureTests */ = {
+			isa = PBXGroup;
+			children = (
+				104BECB21AD567910035A7EA /* CookieCrunchAdventureTests.swift */,
+				104BECB01AD567910035A7EA /* Supporting Files */,
+			);
+			path = CookieCrunchAdventureTests;
+			sourceTree = "<group>";
+		};
+		104BECB01AD567910035A7EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				104BECB11AD567910035A7EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		104BECBE1AD568780035A7EA /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				104BECBF1AD568780035A7EA /* Chomp.wav */,
+				104BECC01AD568780035A7EA /* Drip.wav */,
+				104BECC11AD568780035A7EA /* Error.wav */,
+				104BECC21AD568780035A7EA /* Ka-Ching.wav */,
+				104BECC31AD568780035A7EA /* Mining by Moonlight.mp3 */,
+				104BECC41AD568780035A7EA /* Scrape.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		104BECCD1AD56B100035A7EA /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				104BECCE1AD56B100035A7EA /* Level_0.json */,
+				104BECCF1AD56B100035A7EA /* Level_1.json */,
+				104BECD01AD56B100035A7EA /* Level_2.json */,
+				104BECD11AD56B100035A7EA /* Level_3.json */,
+				104BECD21AD56B100035A7EA /* Level_4.json */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		104BEC921AD567910035A7EA /* CookieCrunchAdventure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104BECB61AD567910035A7EA /* Build configuration list for PBXNativeTarget "CookieCrunchAdventure" */;
+			buildPhases = (
+				104BEC8F1AD567910035A7EA /* Sources */,
+				104BEC901AD567910035A7EA /* Frameworks */,
+				104BEC911AD567910035A7EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CookieCrunchAdventure;
+			productName = CookieCrunchAdventure;
+			productReference = 104BEC931AD567910035A7EA /* CookieCrunchAdventure.app */;
+			productType = "com.apple.product-type.application";
+		};
+		104BECAB1AD567910035A7EA /* CookieCrunchAdventureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104BECB91AD567910035A7EA /* Build configuration list for PBXNativeTarget "CookieCrunchAdventureTests" */;
+			buildPhases = (
+				104BECA81AD567910035A7EA /* Sources */,
+				104BECA91AD567910035A7EA /* Frameworks */,
+				104BECAA1AD567910035A7EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				104BECAE1AD567910035A7EA /* PBXTargetDependency */,
+			);
+			name = CookieCrunchAdventureTests;
+			productName = CookieCrunchAdventureTests;
+			productReference = 104BECAC1AD567910035A7EA /* CookieCrunchAdventureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		104BEC8B1AD567910035A7EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "William Manning";
+				TargetAttributes = {
+					104BEC921AD567910035A7EA = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					104BECAB1AD567910035A7EA = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 104BEC921AD567910035A7EA;
+					};
+				};
+			};
+			buildConfigurationList = 104BEC8E1AD567910035A7EA /* Build configuration list for PBXProject "CookieCrunchAdventure" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 104BEC8A1AD567910035A7EA;
+			productRefGroup = 104BEC941AD567910035A7EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				104BEC921AD567910035A7EA /* CookieCrunchAdventure */,
+				104BECAB1AD567910035A7EA /* CookieCrunchAdventureTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		104BEC911AD567910035A7EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104BECD41AD56B100035A7EA /* Level_1.json in Resources */,
+				104BECD51AD56B100035A7EA /* Level_2.json in Resources */,
+				104BECA71AD567910035A7EA /* LaunchScreen.xib in Resources */,
+				104BECC61AD568780035A7EA /* Drip.wav in Resources */,
+				104BECA41AD567910035A7EA /* Images.xcassets in Resources */,
+				104BECC91AD568780035A7EA /* Mining by Moonlight.mp3 in Resources */,
+				104BECCA1AD568780035A7EA /* Scrape.wav in Resources */,
+				104BEC9B1AD567910035A7EA /* GameScene.sks in Resources */,
+				104BECD31AD56B100035A7EA /* Level_0.json in Resources */,
+				104BECA21AD567910035A7EA /* Main.storyboard in Resources */,
+				104BECCC1AD56AF60035A7EA /* Grid.atlas in Resources */,
+				104BECC81AD568780035A7EA /* Ka-Ching.wav in Resources */,
+				104BECC51AD568780035A7EA /* Chomp.wav in Resources */,
+				104BECD71AD56B100035A7EA /* Level_4.json in Resources */,
+				104BECBD1AD567FF0035A7EA /* Sprites.atlas in Resources */,
+				104BECD61AD56B100035A7EA /* Level_3.json in Resources */,
+				104BECC71AD568780035A7EA /* Error.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104BECAA1AD567910035A7EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		104BEC8F1AD567910035A7EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104BEC9D1AD567910035A7EA /* GameScene.swift in Sources */,
+				104BEC9F1AD567910035A7EA /* GameViewController.swift in Sources */,
+				104BEC991AD567910035A7EA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104BECA81AD567910035A7EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104BECB31AD567910035A7EA /* CookieCrunchAdventureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		104BECAE1AD567910035A7EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 104BEC921AD567910035A7EA /* CookieCrunchAdventure */;
+			targetProxy = 104BECAD1AD567910035A7EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		104BECA01AD567910035A7EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				104BECA11AD567910035A7EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		104BECA51AD567910035A7EA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				104BECA61AD567910035A7EA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		104BECB41AD567910035A7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		104BECB51AD567910035A7EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		104BECB71AD567910035A7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CookieCrunchAdventure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		104BECB81AD567910035A7EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CookieCrunchAdventure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		104BECBA1AD567910035A7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CookieCrunchAdventureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookieCrunchAdventure.app/CookieCrunchAdventure";
+			};
+			name = Debug;
+		};
+		104BECBB1AD567910035A7EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CookieCrunchAdventureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookieCrunchAdventure.app/CookieCrunchAdventure";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		104BEC8E1AD567910035A7EA /* Build configuration list for PBXProject "CookieCrunchAdventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104BECB41AD567910035A7EA /* Debug */,
+				104BECB51AD567910035A7EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		104BECB61AD567910035A7EA /* Build configuration list for PBXNativeTarget "CookieCrunchAdventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104BECB71AD567910035A7EA /* Debug */,
+				104BECB81AD567910035A7EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		104BECB91AD567910035A7EA /* Build configuration list for PBXNativeTarget "CookieCrunchAdventureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104BECBA1AD567910035A7EA /* Debug */,
+				104BECBB1AD567910035A7EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 104BEC8B1AD567910035A7EA /* Project object */;
+}
