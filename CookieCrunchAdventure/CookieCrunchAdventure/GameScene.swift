@@ -1,45 +1,46 @@
-//
-//  GameScene.swift
-//  CookieCrunchAdventure
-//
-//  Created by William Manning on 4/8/15.
-//  Copyright (c) 2015 William Manning. All rights reserved.
-//
-
 import SpriteKit
 
 class GameScene: SKScene {
-    override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 65;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
-        
-        self.addChild(myLabel)
-    }
+    var level: Level!
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        /* Called when a touch begins */
-        
-        for touch: AnyObject in touches {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
+    let TileWidth: CGFloat = 32.0
+    let TileHeight: CGFloat = 36.0
+    
+    let gameLayer = SKNode()
+    let cookiesLayer = SKNode()
+    
+    func addSpritesForCookies(cookies: Set<Cookie>) {
+        for cookie in cookies {
+            let sprite = SKSpriteNode(imageNamed: cookie.cookieType.spriteName)
+            sprite.position = pointForColumn(cookie.column, row:cookie.row)
+            cookiesLayer.addChild(sprite)
+            cookie.sprite = sprite
         }
     }
-   
-    override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
+    func pointForColumn(column: Int, row: Int) -> CGPoint {
+        return CGPoint(
+                x: CGFloat(column)*TileWidth + TileWidth/2,
+                y: CGFloat(row)*TileHeight + TileHeight/2)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder) is not used in this app")
+    }
+    
+    override init(size: CGSize) {
+        super.init(size: size)
+        
+        anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        
+        let background = SKSpriteNode(imageNamed: "Background")
+        addChild(background)
+        
+        addChild(gameLayer)
+        
+        let layerPos = CGPoint(
+            x: -TileWidth * CGFloat(NumColumns) / 2,
+            y: -TileHeight * CGFloat(NumRows) / 2)
+        cookiesLayer.position = layerPos
+        gameLayer.addChild(cookiesLayer);
     }
 }

@@ -28,6 +28,10 @@
 		104BECD51AD56B100035A7EA /* Level_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 104BECD01AD56B100035A7EA /* Level_2.json */; };
 		104BECD61AD56B100035A7EA /* Level_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 104BECD11AD56B100035A7EA /* Level_3.json */; };
 		104BECD71AD56B100035A7EA /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 104BECD21AD56B100035A7EA /* Level_4.json */; };
+		104BECD91AD56C580035A7EA /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECD81AD56C580035A7EA /* Cookie.swift */; };
+		104BECDB1AD5715F0035A7EA /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECDA1AD5715F0035A7EA /* Array2D.swift */; };
+		104BECDD1AD572090035A7EA /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECDC1AD572090035A7EA /* Set.swift */; };
+		104BECDF1AD5723D0035A7EA /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECDE1AD5723D0035A7EA /* Level.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,10 @@
 		104BECD01AD56B100035A7EA /* Level_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_2.json; sourceTree = "<group>"; };
 		104BECD11AD56B100035A7EA /* Level_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_3.json; sourceTree = "<group>"; };
 		104BECD21AD56B100035A7EA /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
+		104BECD81AD56C580035A7EA /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
+		104BECDA1AD5715F0035A7EA /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		104BECDC1AD572090035A7EA /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		104BECDE1AD5723D0035A7EA /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,10 @@
 				104BEC981AD567910035A7EA /* AppDelegate.swift */,
 				104BEC9A1AD567910035A7EA /* GameScene.sks */,
 				104BEC9C1AD567910035A7EA /* GameScene.swift */,
+				104BECD81AD56C580035A7EA /* Cookie.swift */,
+				104BECDA1AD5715F0035A7EA /* Array2D.swift */,
+				104BECDC1AD572090035A7EA /* Set.swift */,
+				104BECDE1AD5723D0035A7EA /* Level.swift */,
 				104BEC9E1AD567910035A7EA /* GameViewController.swift */,
 				104BECA01AD567910035A7EA /* Main.storyboard */,
 				104BECA31AD567910035A7EA /* Images.xcassets */,
@@ -288,8 +300,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				104BEC9D1AD567910035A7EA /* GameScene.swift in Sources */,
+				104BECDF1AD5723D0035A7EA /* Level.swift in Sources */,
+				104BECD91AD56C580035A7EA /* Cookie.swift in Sources */,
+				104BECDD1AD572090035A7EA /* Set.swift in Sources */,
 				104BEC9F1AD567910035A7EA /* GameViewController.swift in Sources */,
 				104BEC991AD567910035A7EA /* AppDelegate.swift in Sources */,
+				104BECDB1AD5715F0035A7EA /* Array2D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
