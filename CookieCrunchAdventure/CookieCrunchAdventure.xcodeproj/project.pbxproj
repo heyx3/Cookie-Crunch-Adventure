@@ -32,6 +32,8 @@
 		104BECDB1AD5715F0035A7EA /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECDA1AD5715F0035A7EA /* Array2D.swift */; };
 		104BECDD1AD572090035A7EA /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECDC1AD572090035A7EA /* Set.swift */; };
 		104BECDF1AD5723D0035A7EA /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECDE1AD5723D0035A7EA /* Level.swift */; };
+		104BECE11AD578E70035A7EA /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECE01AD578E70035A7EA /* Tile.swift */; };
+		104BECE31AD57BD50035A7EA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECE21AD57BD50035A7EA /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,14 +59,14 @@
 		104BECAC1AD567910035A7EA /* CookieCrunchAdventureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookieCrunchAdventureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		104BECB11AD567910035A7EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		104BECB21AD567910035A7EA /* CookieCrunchAdventureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieCrunchAdventureTests.swift; sourceTree = "<group>"; };
-		104BECBC1AD567FF0035A7EA /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		104BECBC1AD567FF0035A7EA /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Sprites.atlas; path = CookieCrunchAdventure/Sprites.atlas; sourceTree = "<group>"; };
 		104BECBF1AD568780035A7EA /* Chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Chomp.wav; sourceTree = "<group>"; };
 		104BECC01AD568780035A7EA /* Drip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Drip.wav; sourceTree = "<group>"; };
 		104BECC11AD568780035A7EA /* Error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Error.wav; sourceTree = "<group>"; };
 		104BECC21AD568780035A7EA /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
 		104BECC31AD568780035A7EA /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
 		104BECC41AD568780035A7EA /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
-		104BECCB1AD56AF60035A7EA /* Grid.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Grid.atlas; sourceTree = "<group>"; };
+		104BECCB1AD56AF60035A7EA /* Grid.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Grid.atlas; path = CookieCrunchAdventure/Grid.atlas; sourceTree = "<group>"; };
 		104BECCE1AD56B100035A7EA /* Level_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_0.json; sourceTree = "<group>"; };
 		104BECCF1AD56B100035A7EA /* Level_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_1.json; sourceTree = "<group>"; };
 		104BECD01AD56B100035A7EA /* Level_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_2.json; sourceTree = "<group>"; };
@@ -74,6 +76,8 @@
 		104BECDA1AD5715F0035A7EA /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
 		104BECDC1AD572090035A7EA /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 		104BECDE1AD5723D0035A7EA /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		104BECE01AD578E70035A7EA /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		104BECE21AD57BD50035A7EA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 				104BECDC1AD572090035A7EA /* Set.swift */,
 				104BECDE1AD5723D0035A7EA /* Level.swift */,
 				104BEC9E1AD567910035A7EA /* GameViewController.swift */,
+				104BECE21AD57BD50035A7EA /* Extensions.swift */,
 				104BECA01AD567910035A7EA /* Main.storyboard */,
 				104BECA31AD567910035A7EA /* Images.xcassets */,
 				104BECA51AD567910035A7EA /* LaunchScreen.xib */,
@@ -300,8 +305,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				104BEC9D1AD567910035A7EA /* GameScene.swift in Sources */,
+				104BECE31AD57BD50035A7EA /* Extensions.swift in Sources */,
 				104BECDF1AD5723D0035A7EA /* Level.swift in Sources */,
 				104BECD91AD56C580035A7EA /* Cookie.swift in Sources */,
+				104BECE11AD578E70035A7EA /* Tile.swift in Sources */,
 				104BECDD1AD572090035A7EA /* Set.swift in Sources */,
 				104BEC9F1AD567910035A7EA /* GameViewController.swift in Sources */,
 				104BEC991AD567910035A7EA /* AppDelegate.swift in Sources */,
