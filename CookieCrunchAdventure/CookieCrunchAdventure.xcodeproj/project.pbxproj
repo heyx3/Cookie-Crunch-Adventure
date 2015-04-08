@@ -101,6 +101,10 @@
 		104BEC8A1AD567910035A7EA = {
 			isa = PBXGroup;
 			children = (
+				104BECCD1AD56B100035A7EA /* Levels */,
+				104BECCB1AD56AF60035A7EA /* Grid.atlas */,
+				104BECBE1AD568780035A7EA /* Sounds */,
+				104BECBC1AD567FF0035A7EA /* Sprites.atlas */,
 				104BEC951AD567910035A7EA /* CookieCrunchAdventure */,
 				104BECAF1AD567910035A7EA /* CookieCrunchAdventureTests */,
 				104BEC941AD567910035A7EA /* Products */,
@@ -119,18 +123,11 @@
 		104BEC951AD567910035A7EA /* CookieCrunchAdventure */ = {
 			isa = PBXGroup;
 			children = (
-				104BECCD1AD56B100035A7EA /* Levels */,
-				104BECCB1AD56AF60035A7EA /* Grid.atlas */,
-				104BECBE1AD568780035A7EA /* Sounds */,
-				104BECBC1AD567FF0035A7EA /* Sprites.atlas */,
-				104BEC981AD567910035A7EA /* AppDelegate.swift */,
-				104BEC9A1AD567910035A7EA /* GameScene.sks */,
-				104BEC9C1AD567910035A7EA /* GameScene.swift */,
-				104BECD81AD56C580035A7EA /* Cookie.swift */,
+				104BECE61AD57EBB0035A7EA /* Controller */,
+				104BECE51AD57E9E0035A7EA /* View */,
+				104BECE41AD57E7E0035A7EA /* Model */,
 				104BECDA1AD5715F0035A7EA /* Array2D.swift */,
 				104BECDC1AD572090035A7EA /* Set.swift */,
-				104BECDE1AD5723D0035A7EA /* Level.swift */,
-				104BEC9E1AD567910035A7EA /* GameViewController.swift */,
 				104BECE21AD57BD50035A7EA /* Extensions.swift */,
 				104BECA01AD567910035A7EA /* Main.storyboard */,
 				104BECA31AD567910035A7EA /* Images.xcassets */,
@@ -175,7 +172,8 @@
 				104BECC31AD568780035A7EA /* Mining by Moonlight.mp3 */,
 				104BECC41AD568780035A7EA /* Scrape.wav */,
 			);
-			path = Sounds;
+			name = Sounds;
+			path = CookieCrunchAdventure/Sounds;
 			sourceTree = "<group>";
 		};
 		104BECCD1AD56B100035A7EA /* Levels */ = {
@@ -187,7 +185,36 @@
 				104BECD11AD56B100035A7EA /* Level_3.json */,
 				104BECD21AD56B100035A7EA /* Level_4.json */,
 			);
-			path = Levels;
+			name = Levels;
+			path = CookieCrunchAdventure/Levels;
+			sourceTree = "<group>";
+		};
+		104BECE41AD57E7E0035A7EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				104BECD81AD56C580035A7EA /* Cookie.swift */,
+				104BECDE1AD5723D0035A7EA /* Level.swift */,
+				104BECE01AD578E70035A7EA /* Tile.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		104BECE51AD57E9E0035A7EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				104BEC9A1AD567910035A7EA /* GameScene.sks */,
+				104BEC9C1AD567910035A7EA /* GameScene.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		104BECE61AD57EBB0035A7EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				104BEC9E1AD567910035A7EA /* GameViewController.swift */,
+				104BEC981AD567910035A7EA /* AppDelegate.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
