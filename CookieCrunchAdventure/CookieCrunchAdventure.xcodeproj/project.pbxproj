@@ -35,6 +35,8 @@
 		104BECE11AD578E70035A7EA /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECE01AD578E70035A7EA /* Tile.swift */; };
 		104BECE31AD57BD50035A7EA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECE21AD57BD50035A7EA /* Extensions.swift */; };
 		104BECE81AD587F90035A7EA /* Swap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECE71AD587F90035A7EA /* Swap.swift */; };
+		104BECEA1AD58EA20035A7EA /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECE91AD58EA20035A7EA /* Chain.swift */; };
+		104BECEC1AD590F90035A7EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104BECEB1AD590F90035A7EA /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		104BECE01AD578E70035A7EA /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		104BECE21AD57BD50035A7EA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		104BECE71AD587F90035A7EA /* Swap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swap.swift; sourceTree = "<group>"; };
+		104BECE91AD58EA20035A7EA /* Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
+		104BECEB1AD590F90035A7EA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 		104BEC951AD567910035A7EA /* CookieCrunchAdventure */ = {
 			isa = PBXGroup;
 			children = (
+				104BECEB1AD590F90035A7EA /* Main.storyboard */,
 				104BECE61AD57EBB0035A7EA /* Controller */,
 				104BECE51AD57E9E0035A7EA /* View */,
 				104BECE41AD57E7E0035A7EA /* Model */,
@@ -194,6 +199,7 @@
 		104BECE41AD57E7E0035A7EA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				104BECE91AD58EA20035A7EA /* Chain.swift */,
 				104BECD81AD56C580035A7EA /* Cookie.swift */,
 				104BECDE1AD5723D0035A7EA /* Level.swift */,
 				104BECE01AD578E70035A7EA /* Tile.swift */,
@@ -315,6 +321,7 @@
 				104BECC51AD568780035A7EA /* Chomp.wav in Resources */,
 				104BECD71AD56B100035A7EA /* Level_4.json in Resources */,
 				104BECBD1AD567FF0035A7EA /* Sprites.atlas in Resources */,
+				104BECEC1AD590F90035A7EA /* Main.storyboard in Resources */,
 				104BECD61AD56B100035A7EA /* Level_3.json in Resources */,
 				104BECC71AD568780035A7EA /* Error.wav in Resources */,
 			);
@@ -337,6 +344,7 @@
 				104BEC9D1AD567910035A7EA /* GameScene.swift in Sources */,
 				104BECE31AD57BD50035A7EA /* Extensions.swift in Sources */,
 				104BECDF1AD5723D0035A7EA /* Level.swift in Sources */,
+				104BECEA1AD58EA20035A7EA /* Chain.swift in Sources */,
 				104BECD91AD56C580035A7EA /* Cookie.swift in Sources */,
 				104BECE81AD587F90035A7EA /* Swap.swift in Sources */,
 				104BECE11AD578E70035A7EA /* Tile.swift in Sources */,
