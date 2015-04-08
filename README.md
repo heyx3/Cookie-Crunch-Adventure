@@ -9,8 +9,9 @@ An implementation of [this](http://www.raywenderlich.com/66877/how-to-make-a-gam
 
 The following are some helper classes added for this game:
 
-Array2D<T>: A 2D array, stored under the hood as a normal 1D array.
-Set<T>: A collection of unique elements, stored under the hood as a dictionary.
+* **Array2D<T>**: A 2D array, stored under the hood as a normal 1D array.
+* **Set<T>**: A collection of unique elements, stored under the hood as a dictionary.
+* **Extensions.swift**: A file that provides a way to parse JSON data into a dictionary.
 
 The game flow is designed using the Model-View-Controller (MVC) pattern.
 
@@ -18,9 +19,11 @@ The game flow is designed using the Model-View-Controller (MVC) pattern.
 
 The game data is represented with the following classes:
 
-Cookie: An item with a "CookieType" enum, sprite, and grid coordinates.
-Tile: A spot on the level where a cookie may be located. Level grids can have holes in them where cookies cannot move to.
-Level: A grid of cookies and a parallel grid of tiles.
+* **Cookie**: An item with a "CookieType" enum, sprite, and grid coordinates.
+* **Tile**: A spot on the level where a cookie may be located. Level grids can have holes in them where cookies cannot move to.
+* **Swap**: Represents two cookies that can be swapped.
+* **Chain**: Represents a horizontal or vertical line of similar cookies that can be cleared at once.
+* **Level**: The tiles on the game grid, the cookies that sit in them, and a collection of behaviors for modifying said cookies.
 
 ### View
 
@@ -28,6 +31,6 @@ The visual representation of the game is primarily handled by the "GameScene" cl
 
 ### Controller
 
-The game flow and input is primarily handled by the "GameViewController" class.
+The game flow is primarily handled by the "GameViewController" class.
 
 System callbacks are handled by the "AppDelegate" class.
