@@ -34,6 +34,7 @@
 		104BECDF1AD5723D0035A7EA /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECDE1AD5723D0035A7EA /* Level.swift */; };
 		104BECE11AD578E70035A7EA /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECE01AD578E70035A7EA /* Tile.swift */; };
 		104BECE31AD57BD50035A7EA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECE21AD57BD50035A7EA /* Extensions.swift */; };
+		104BECE81AD587F90035A7EA /* Swap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECE71AD587F90035A7EA /* Swap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		104BECDE1AD5723D0035A7EA /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		104BECE01AD578E70035A7EA /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		104BECE21AD57BD50035A7EA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		104BECE71AD587F90035A7EA /* Swap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				104BECD81AD56C580035A7EA /* Cookie.swift */,
 				104BECDE1AD5723D0035A7EA /* Level.swift */,
 				104BECE01AD578E70035A7EA /* Tile.swift */,
+				104BECE71AD587F90035A7EA /* Swap.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				104BECE31AD57BD50035A7EA /* Extensions.swift in Sources */,
 				104BECDF1AD5723D0035A7EA /* Level.swift in Sources */,
 				104BECD91AD56C580035A7EA /* Cookie.swift in Sources */,
+				104BECE81AD587F90035A7EA /* Swap.swift in Sources */,
 				104BECE11AD578E70035A7EA /* Tile.swift in Sources */,
 				104BECDD1AD572090035A7EA /* Set.swift in Sources */,
 				104BEC9F1AD567910035A7EA /* GameViewController.swift in Sources */,

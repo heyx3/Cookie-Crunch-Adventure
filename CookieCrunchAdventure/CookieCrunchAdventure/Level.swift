@@ -22,6 +22,21 @@ class Level {
         return createInitialCookies()
     }
     
+    func performSwap(swap: Swap) {
+        let columnA = swap.cookieA.column
+        let rowA = swap.cookieA.row
+        let columnB = swap.cookieB.column
+        let rowB = swap.cookieB.row
+        
+        cookies[columnA, rowA] = swap.cookieB
+        swap.cookieB.column = columnA
+        swap.cookieB.row = rowA
+        
+        cookies[columnB, rowB] = swap.cookieA
+        swap.cookieA.column = columnB
+        swap.cookieA.row = rowB
+    }
+    
     private func createInitialCookies() -> Set<Cookie> {
         var set = Set<Cookie>()
         
