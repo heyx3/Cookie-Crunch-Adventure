@@ -2,7 +2,11 @@ import UIKit
 import SpriteKit
 import AVFoundation
 
+
+var LevelIndex : Int = 0
+
 class GameViewController: UIViewController {
+    
     // The scene draws the tiles and cookie sprites, and handles swipes.
     var scene: GameScene!
     
@@ -20,23 +24,16 @@ class GameViewController: UIViewController {
     
     var tapGestureRecognizer: UITapGestureRecognizer!
     
-    lazy var backgroundMusic: AVAudioPlayer = {
-        let url = NSBundle.mainBundle().URLForResource("Mining by Moonlight", withExtension: "mp3")
-        let player = AVAudioPlayer(contentsOfURL: url, error: nil)
-        player.numberOfLoops = -1
-        return player
-        }()
-    
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
     
     override func shouldAutorotate() -> Bool {
-        return true
+        return false
     }
     
     override func supportedInterfaceOrientations() -> Int {
-        return Int(UIInterfaceOrientationMask.AllButUpsideDown.rawValue)
+        return Int(UIInterfaceOrientationMask.Portrait.rawValue)
     }
     
     override func viewDidLoad() {
@@ -51,7 +48,7 @@ class GameViewController: UIViewController {
         scene.scaleMode = .AspectFill
         
         // Load the level.
-        level = Level(filename: "Level_1")
+        level = Level(filename: "Level_\(LevelIndex)")
         scene.level = level
         scene.addTiles()
         scene.swipeHandler = handleSwipe
@@ -62,9 +59,6 @@ class GameViewController: UIViewController {
         
         // Present the scene.
         skView.presentScene(scene)
-        
-        // Load and start background music.
-        backgroundMusic.play()
         
         // Let's start the game!
         beginGame()
@@ -187,7 +181,9 @@ class GameViewController: UIViewController {
         gameOverPanel.hidden = true
         scene.userInteractionEnabled = true
         
-        beginGame()
+        self.dismissViewControllerAnimated(true) { }
+        Skillz.skillzInstance().displayTournamentResultsWithScore(score) { }
+        //self.parentViewController?.dismissViewControllerAnimated(true) { }
     }
     
     @IBAction func shuffleButtonPressed(AnyObject) {

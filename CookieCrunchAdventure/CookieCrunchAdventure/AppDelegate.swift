@@ -7,15 +7,28 @@
 //
 
 import UIKit
+import SpriteKit
+import AVFoundation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, SkillzDelegate {
 
     var window: UIWindow?
-
+    
+    lazy var backgroundMusic: AVAudioPlayer = {
+        let url = NSBundle.mainBundle().URLForResource("Mining by Moonlight", withExtension: "mp3")
+        let player = AVAudioPlayer(contentsOfURL: url, error: nil)
+        player.numberOfLoops = -1
+        return player
+        }()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        Skillz.skillzInstance().initWithGameId("1083", forDelegate: self,
+                                               withEnvironment: SkillzEnvironment.Sandbox);
+        
+        // Load and start background music.
+        backgroundMusic.play()
+
         return true
     }
 
@@ -41,6 +54,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    
+    func tournamentWillBegin(gameParameters: [NSObject : AnyObject]!) {
+        //Get the "level_index" key and try to parse it as an integer.
+        if let indx = (gameParameters["level_index"] as? String) {
+            if let tryInt : Int = indx.toInt() {
+                LevelIndex = tryInt
+            } else {
+                LevelIndex = 0
+            }
+        } else {
+            LevelIndex = 0
+        }
+        
+        self.window?.rootViewController?.performSegueWithIdentifier("MainToGame", sender:self)
+    }
+    func preferredSkillzInterfaceOrientation() -> SkillzOrientation {
+        return SkillzOrientation.Portrait
+    }
 }
-

@@ -11,7 +11,6 @@
 		104BEC9B1AD567910035A7EA /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 104BEC9A1AD567910035A7EA /* GameScene.sks */; };
 		104BEC9D1AD567910035A7EA /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BEC9C1AD567910035A7EA /* GameScene.swift */; };
 		104BEC9F1AD567910035A7EA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BEC9E1AD567910035A7EA /* GameViewController.swift */; };
-		104BECA21AD567910035A7EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104BECA01AD567910035A7EA /* Main.storyboard */; };
 		104BECA41AD567910035A7EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 104BECA31AD567910035A7EA /* Images.xcassets */; };
 		104BECA71AD567910035A7EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 104BECA51AD567910035A7EA /* LaunchScreen.xib */; };
 		104BECB31AD567910035A7EA /* CookieCrunchAdventureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECB21AD567910035A7EA /* CookieCrunchAdventureTests.swift */; };
@@ -37,6 +36,9 @@
 		104BECE81AD587F90035A7EA /* Swap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECE71AD587F90035A7EA /* Swap.swift */; };
 		104BECEA1AD58EA20035A7EA /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECE91AD58EA20035A7EA /* Chain.swift */; };
 		104BECEC1AD590F90035A7EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104BECEB1AD590F90035A7EA /* Main.storyboard */; };
+		104BECF71AD5AB930035A7EA /* SkillzSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 104BECEF1AD5944A0035A7EA /* SkillzSDK.bundle */; };
+		104BECF81AD5AB960035A7EA /* SkillzSDK-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104BECEE1AD5944A0035A7EA /* SkillzSDK-iOS.framework */; };
+		104BECFA1AD5B1590035A7EA /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BECF91AD5B1590035A7EA /* MainMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +58,6 @@
 		104BEC9A1AD567910035A7EA /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		104BEC9C1AD567910035A7EA /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		104BEC9E1AD567910035A7EA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		104BECA11AD567910035A7EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		104BECA31AD567910035A7EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		104BECA61AD567910035A7EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		104BECAC1AD567910035A7EA /* CookieCrunchAdventureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookieCrunchAdventureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +85,30 @@
 		104BECE71AD587F90035A7EA /* Swap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swap.swift; sourceTree = "<group>"; };
 		104BECE91AD58EA20035A7EA /* Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
 		104BECEB1AD590F90035A7EA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		104BECEE1AD5944A0035A7EA /* SkillzSDK-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "SkillzSDK-iOS.framework"; sourceTree = "<group>"; };
+		104BECEF1AD5944A0035A7EA /* SkillzSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SkillzSDK.bundle; sourceTree = "<group>"; };
+		104BECF41AD5966C0035A7EA /* CookieCrunchAdventure-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CookieCrunchAdventure-Bridging-Header.h"; sourceTree = "<group>"; };
+		104BECF91AD5B1590035A7EA /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		104BECFB1AD5C3D90035A7EA /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		104BECFD1AD5C4220035A7EA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		104BECFE1AD5C4220035A7EA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		104BECFF1AD5C4220035A7EA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		104BED001AD5C4220035A7EA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		104BED011AD5C4220035A7EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		104BED021AD5C4220035A7EA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		104BED031AD5C4220035A7EA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		104BED041AD5C4230035A7EA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		104BED051AD5C4230035A7EA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		104BED061AD5C4230035A7EA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		104BED071AD5C4230035A7EA /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		104BED081AD5C4230035A7EA /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		104BED091AD5C4230035A7EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		104BED0A1AD5C4230035A7EA /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		104BED191AD5C4570035A7EA /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "usr/lib/libc++.1.dylib"; sourceTree = SDKROOT; };
+		104BED1A1AD5C4570035A7EA /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		104BED1B1AD5C4570035A7EA /* libc++abi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++abi.dylib"; path = "usr/lib/libc++abi.dylib"; sourceTree = SDKROOT; };
+		104BED1F1AD5C4800035A7EA /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		104BED201AD5C4800035A7EA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104BECF81AD5AB960035A7EA /* SkillzSDK-iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +133,7 @@
 		104BEC8A1AD567910035A7EA = {
 			isa = PBXGroup;
 			children = (
+				104BED231AD5C5260035A7EA /* Frameworks */,
 				104BECCD1AD56B100035A7EA /* Levels */,
 				104BECCB1AD56AF60035A7EA /* Grid.atlas */,
 				104BECBE1AD568780035A7EA /* Sounds */,
@@ -136,10 +163,10 @@
 				104BECDA1AD5715F0035A7EA /* Array2D.swift */,
 				104BECDC1AD572090035A7EA /* Set.swift */,
 				104BECE21AD57BD50035A7EA /* Extensions.swift */,
-				104BECA01AD567910035A7EA /* Main.storyboard */,
 				104BECA31AD567910035A7EA /* Images.xcassets */,
 				104BECA51AD567910035A7EA /* LaunchScreen.xib */,
 				104BEC961AD567910035A7EA /* Supporting Files */,
+				104BECF41AD5966C0035A7EA /* CookieCrunchAdventure-Bridging-Header.h */,
 			);
 			path = CookieCrunchAdventure;
 			sourceTree = "<group>";
@@ -222,8 +249,47 @@
 			children = (
 				104BEC9E1AD567910035A7EA /* GameViewController.swift */,
 				104BEC981AD567910035A7EA /* AppDelegate.swift */,
+				104BECF91AD5B1590035A7EA /* MainMenuViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		104BECED1AD5944A0035A7EA /* SkillzSDK-iOS.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				104BECEE1AD5944A0035A7EA /* SkillzSDK-iOS.framework */,
+				104BECEF1AD5944A0035A7EA /* SkillzSDK.bundle */,
+			);
+			name = "SkillzSDK-iOS.embeddedframework";
+			path = "../../../Downloads/sdk_ios_10.0.21 2/SkillzSDK-iOS.embeddedframework";
+			sourceTree = "<group>";
+		};
+		104BED231AD5C5260035A7EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				104BED1F1AD5C4800035A7EA /* libz.1.2.5.dylib */,
+				104BED201AD5C4800035A7EA /* libz.dylib */,
+				104BED191AD5C4570035A7EA /* libc++.1.dylib */,
+				104BED1A1AD5C4570035A7EA /* libc++.dylib */,
+				104BED1B1AD5C4570035A7EA /* libc++abi.dylib */,
+				104BECFD1AD5C4220035A7EA /* AssetsLibrary.framework */,
+				104BECFE1AD5C4220035A7EA /* AudioToolbox.framework */,
+				104BECFF1AD5C4220035A7EA /* AVFoundation.framework */,
+				104BED001AD5C4220035A7EA /* CoreData.framework */,
+				104BED011AD5C4220035A7EA /* CoreGraphics.framework */,
+				104BED021AD5C4220035A7EA /* CoreLocation.framework */,
+				104BED031AD5C4220035A7EA /* CoreMedia.framework */,
+				104BED041AD5C4230035A7EA /* CoreTelephony.framework */,
+				104BED051AD5C4230035A7EA /* CoreText.framework */,
+				104BED061AD5C4230035A7EA /* CoreVideo.framework */,
+				104BED071AD5C4230035A7EA /* EventKit.framework */,
+				104BED081AD5C4230035A7EA /* EventKitUI.framework */,
+				104BED091AD5C4230035A7EA /* Foundation.framework */,
+				104BED0A1AD5C4230035A7EA /* iAd.framework */,
+				104BECFB1AD5C3D90035A7EA /* AdSupport.framework */,
+				104BECED1AD5944A0035A7EA /* SkillzSDK-iOS.embeddedframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +302,7 @@
 				104BEC8F1AD567910035A7EA /* Sources */,
 				104BEC901AD567910035A7EA /* Frameworks */,
 				104BEC911AD567910035A7EA /* Resources */,
+				104BED241AD5D5BA0035A7EA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -315,7 +382,6 @@
 				104BECCA1AD568780035A7EA /* Scrape.wav in Resources */,
 				104BEC9B1AD567910035A7EA /* GameScene.sks in Resources */,
 				104BECD31AD56B100035A7EA /* Level_0.json in Resources */,
-				104BECA21AD567910035A7EA /* Main.storyboard in Resources */,
 				104BECCC1AD56AF60035A7EA /* Grid.atlas in Resources */,
 				104BECC81AD568780035A7EA /* Ka-Ching.wav in Resources */,
 				104BECC51AD568780035A7EA /* Chomp.wav in Resources */,
@@ -323,6 +389,7 @@
 				104BECBD1AD567FF0035A7EA /* Sprites.atlas in Resources */,
 				104BECEC1AD590F90035A7EA /* Main.storyboard in Resources */,
 				104BECD61AD56B100035A7EA /* Level_3.json in Resources */,
+				104BECF71AD5AB930035A7EA /* SkillzSDK.bundle in Resources */,
 				104BECC71AD568780035A7EA /* Error.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,11 +403,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		104BED241AD5D5BA0035A7EA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -e \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}/SkillzSDK.bundle/postprocess.sh\" ]; then\n\"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}/SkillzSDK.bundle/postprocess.sh\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		104BEC8F1AD567910035A7EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104BECFA1AD5B1590035A7EA /* MainMenuViewController.swift in Sources */,
 				104BEC9D1AD567910035A7EA /* GameScene.swift in Sources */,
 				104BECE31AD57BD50035A7EA /* Extensions.swift in Sources */,
 				104BECDF1AD5723D0035A7EA /* Level.swift in Sources */,
@@ -374,14 +458,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		104BECA01AD567910035A7EA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				104BECA11AD567910035A7EA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		104BECA51AD567910035A7EA /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -476,9 +552,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/williammanning/Downloads/sdk_ios_10.0.21,
+					"2/SkillzSDK-iOS.embeddedframework",
+				);
 				INFOPLIST_FILE = CookieCrunchAdventure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"-lz",
+					"-lsqlite3",
+					"-lxml2",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CookieCrunchAdventure/CookieCrunchAdventure-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -486,9 +577,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/williammanning/Downloads/sdk_ios_10.0.21,
+					"2/SkillzSDK-iOS.embeddedframework",
+				);
 				INFOPLIST_FILE = CookieCrunchAdventure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"-lz",
+					"-lsqlite3",
+					"-lxml2",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CookieCrunchAdventure/CookieCrunchAdventure-Bridging-Header.h";
 			};
 			name = Release;
 		};
