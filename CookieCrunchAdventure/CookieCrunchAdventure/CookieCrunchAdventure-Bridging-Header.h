@@ -10,4 +10,4 @@
 #import <Accounts/Accounts.h>
 
 //Skillz framework.
-#import <SkillzSDK-iOS/SKillz.h>
+#import <SkillzSDK-iOS/Skillz.h>
