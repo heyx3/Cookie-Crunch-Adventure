@@ -40,7 +40,7 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         // Configure the view.
-        let skView = view as SKView
+        let skView = view as! SKView
         skView.multipleTouchEnabled = false
         
         // Create and configure the scene.
@@ -149,8 +149,8 @@ class GameViewController: UIViewController {
     }
     
     func updateLabels() {
-        movesLabel.text = NSString(format: "%ld", movesLeft)
-        scoreLabel.text = NSString(format: "%ld", score)
+        movesLabel.text = NSString(format: "%ld", movesLeft) as String
+        scoreLabel.text = NSString(format: "%ld", score) as String
     }
     
     func decrementMoves() {

@@ -17,7 +17,7 @@ class Level {
     
     // These are marked with a !, because it is possible that they get no value
     // (if loading the level fails).
-    let maximumMoves: Int!
+    var maximumMoves: Int!
     
     // The second chain gets twice its regular score, the third chain three times,
     // and so on. This multiplier is reset for every next turn.
@@ -34,7 +34,7 @@ class Level {
             if let tilesArray: AnyObject = dictionary["tiles"] {
                 
                 // Loop through the rows...
-                for (row, rowArray) in enumerate(tilesArray as [[Int]]) {
+                for (row, rowArray) in enumerate(tilesArray as! [[Int]]) {
                     
                     // Note: In Sprite Kit (0,0) is at the bottom of the screen,
                     // so we need to read this file upside down.
@@ -49,7 +49,7 @@ class Level {
                         }
                     }
                     
-                    maximumMoves = (dictionary["moves"] as NSNumber).integerValue
+                    maximumMoves = (dictionary["moves"] as! NSNumber).integerValue
                 }
             }
         }
@@ -115,7 +115,7 @@ class Level {
                     cookies[column, row] = cookie
                     
                     // Also add the cookie to the set so we can tell our caller about it.
-                    set.addElement(cookie)
+                    set.insert(cookie)
                 }
             }
         }
@@ -141,7 +141,7 @@ class Level {
     // Determines whether the suggested swap is a valid one, i.e. it results in at
     // least one new chain of 3 or more cookies of the same type.
     func isPossibleSwap(swap: Swap) -> Bool {
-        return possibleSwaps.containsElement(swap)
+        return possibleSwaps.contains(swap)
     }
     
     // MARK: Swapping
@@ -188,7 +188,7 @@ class Level {
                             // Is either cookie now part of a chain?
                             if hasChainAtColumn(column + 1, row: row) ||
                                 hasChainAtColumn(column, row: row) {
-                                    set.addElement(Swap(cookieA: cookie, cookieB: other))
+                                    set.insert(Swap(cookieA: cookie, cookieB: other))
                             }
                             
                             // Swap them back
@@ -210,7 +210,7 @@ class Level {
                             // Is either cookie now part of a chain?
                             if hasChainAtColumn(column, row: row + 1) ||
                                 hasChainAtColumn(column, row: row) {
-                                    set.addElement(Swap(cookieA: cookie, cookieB: other))
+                                    set.insert(Swap(cookieA: cookie, cookieB: other))
                             }
                             
                             // Swap them back
@@ -264,7 +264,7 @@ class Level {
         calculateScores(horizontalChains)
         calculateScores(verticalChains)
         
-        return horizontalChains.unionSet(verticalChains)
+        return horizontalChains.union(verticalChains)
     }
     
     private func detectHorizontalMatches() -> Set<Chain> {
@@ -294,7 +294,7 @@ class Level {
                             }
                                 while column < NumColumns && cookies[column, row]?.cookieType == matchType
                             
-                            set.addElement(chain)
+                            set.insert(chain)
                             continue
                     }
                 }
@@ -325,7 +325,7 @@ class Level {
                             }
                                 while row < NumRows && cookies[column, row]?.cookieType == matchType
                             
-                            set.addElement(chain)
+                            set.insert(chain)
                             continue
                     }
                 }

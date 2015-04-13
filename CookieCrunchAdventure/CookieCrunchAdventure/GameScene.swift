@@ -183,9 +183,11 @@ class GameScene: SKScene {
     
     // MARK: Detecting Swipes
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        super.touchesBegan(touches, withEvent: event)
+        
         // Convert the touch location to a point relative to the cookiesLayer.
-        let touch = touches.anyObject() as UITouch
+        let touch = touches.first as! UITouch
         let location = touch.locationInNode(cookiesLayer)
         
         // If the touch is inside a square, then this might be the start of a
@@ -205,13 +207,15 @@ class GameScene: SKScene {
         }
     }
     
-    override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+        super.touchesMoved(touches, withEvent: event)
+        
         // If swipeFromColumn is nil then either the swipe began outside
         // the valid area or the game has already swapped the cookies and we need
         // to ignore the rest of the motion.
         if swipeFromColumn == nil { return }
         
-        let touch = touches.anyObject() as UITouch
+        let touch = touches.first as! UITouch
         let location = touch.locationInNode(cookiesLayer)
         
         let (success, column, row) = convertPoint(location)
@@ -268,7 +272,7 @@ class GameScene: SKScene {
         }
     }
     
-    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         // Remove the selection indicator with a fade-out. We only need to do this
         // when the player didn't actually swipe.
         if selectionSprite.parent != nil && swipeFromColumn != nil {
@@ -281,7 +285,7 @@ class GameScene: SKScene {
         swipeFromRow = nil
     }
     
-    override func touchesCancelled(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent) {
         touchesEnded(touches, withEvent: event)
     }
     
@@ -365,7 +369,7 @@ class GameScene: SKScene {
         // Add a label for the score that slowly floats up.
         let scoreLabel = SKLabelNode(fontNamed: "GillSans-BoldItalic")
         scoreLabel.fontSize = 16
-        scoreLabel.text = NSString(format: "%ld", chain.score)
+        scoreLabel.text = NSString(format: "%ld", chain.score) as String
         scoreLabel.position = centerPosition
         scoreLabel.zPosition = 300
         cookiesLayer.addChild(scoreLabel)
