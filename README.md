@@ -1,6 +1,6 @@
 # Cookie-Crunch-Adventure
 
-An implementation of [Ray Wenderlich's 'Cookie Crunch Adventure'](http://www.raywenderlich.com/66877/how-to-make-a-game-like-candy-crush-part-1) Swift app tutorial game.
+An implementation of [Ray Wenderlich's 'Cookie Crunch Adventure'](http://www.raywenderlich.com/75270/make-game-like-candy-crush-with-swift-tutorial-part-1) Swift app tutorial game.
 
 This fork integrates the Skillz framework with the game, as an example of how to integrate Swift games. The integration steps are identical to an Objective-C project, but with the added step of creating a bridging header ("CookieCrunchAdventure/CookieCrunchAdventure-Bridging-Header.h") that allows the Skillz SDK (an Objective-C plugin) to be used in Swift.
 
